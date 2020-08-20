@@ -1,4 +1,4 @@
-@import './components/elements/Header/Header.css';
+@import './components/Header/Header.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
