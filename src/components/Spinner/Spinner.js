@@ -2,10 +2,11 @@ import React from 'react';
 import './Spinner.css';
 
 
-function Spinner () {
+function Spinner()
+{
 	return (
 		<div className="loader">
-			Spinner
+
 		</div>
 	)
 }

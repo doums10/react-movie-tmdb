@@ -1,4 +1,11 @@
 @import './components/Header/Header.css';
+@import './components/FourColGrid/FourColGrid.css';
+@import './components/HeroImage/HeroImage.css';
+@import './components/Home/Home.css';
+@import './components/LoadMoreBtn/LoadMoreBtn.css';
+@import './components/MovieThumb/MovieThumb.css';
+@import './components/SearchBar/SearchBar.css';
+@import './components/Spinner/Spinner.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

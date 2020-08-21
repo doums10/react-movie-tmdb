@@ -4,7 +4,7 @@ import './LoadMoreBtn.css';
 const LoadMoreBtn = (props) => {
 	return (
 		<div>
-			LoadMoreBtn
+			LoadMore
 		</div>
 	)
 }
