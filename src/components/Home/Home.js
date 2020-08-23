@@ -29,6 +29,21 @@ class Home extends Component
     this.fetchItems(endpoint);
   }
 
+  searchItems = (searchTerm) =>
+  {
+    let endpoint = '';
+    this.setState({
+      movies: [],
+      loading: true,
+      searchTerm
+    })
+    if (searchTerm === '' ){
+      endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=$`;
+    } else {
+      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query${searchTerm}`;
+    }
+    this.fetchItems(endpoint);
+  }
   //variable pour afficher autre films en cliquant sur le bouton load more
   loadMoreItems = () =>
   {
@@ -67,16 +82,18 @@ class Home extends Component
   render()
   {
     return (
+      //image principale d'accueil ,texte et titre film qui arrive en premier dans les results
       <div className="rmdb-home">
-      {this.state.heroImage ?
-        <div>
-          <HeroImage
-            image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${this.state.heroImage.backdrop_path}`}
-            title={this.state.heroImage.title}
-            text={this.state.heroImage.overview}
-          />
-        <SearchBar />
-        </div> : null }
+        {this.state.heroImage ?
+          <div>
+
+            <HeroImage
+              image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${this.state.heroImage.backdrop_path}`}
+              title={this.state.heroImage.title}
+              text={this.state.heroImage.overview}
+            />
+            <SearchBar />
+          </div> : null}
         <FourColGrid />
         <Spinner />
         <LoadMoreBtn />

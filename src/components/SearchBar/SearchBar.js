@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './SearchBar.css';
-// eslint-disable-next-line no-unused-vars
+import FontAwesome from 'react-fontawesome';
 
-function SearchBar() {
-	return (
-		<div>
-			SearchBar
-		</div>
-	)
+class SearchBar extends Component
+{
+  state = {
+    value: ''
+  }
+
+  render(){
+    return (
+      <div className="rmdb-searchbar">
+        <div className="rmdb-searchbar-content">
+          <FontAwesome className="rmdb-fa-search" name="search" icon="search" size="2x" />
+          <input
+            type="text"
+            className="rmdb-searchbar-input"
+            placeholder="Search"
+            //onChange={doSearch}
+            value={this.state.value}
+          />
+        </div>
+      </div>
+    )
+  }
 }
 
 export default SearchBar;
