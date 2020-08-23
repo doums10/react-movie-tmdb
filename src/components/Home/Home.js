@@ -60,6 +60,7 @@ class Home extends Component
 
         })
       })
+      .catch(error => console.error('Error:', error))
   }
 
 
@@ -67,8 +68,15 @@ class Home extends Component
   {
     return (
       <div className="rmdb-home">
-        <HeroImage />
+      {this.state.heroImage ?
+        <div>
+          <HeroImage
+            image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${this.state.heroImage.backdrop_path}`}
+            title={this.state.heroImage.title}
+            text={this.state.heroImage.overview}
+          />
         <SearchBar />
+        </div> : null }
         <FourColGrid />
         <Spinner />
         <LoadMoreBtn />

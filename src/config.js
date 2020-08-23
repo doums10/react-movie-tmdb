@@ -20,7 +20,8 @@ const BACKDROP_SIZE = 'w1280';
 const POSTER_SIZE = 'w500';
 
 
-export {
+export
+{
 	API_URL,
 	API_KEY,
 	IMAGE_BASE_URL,
