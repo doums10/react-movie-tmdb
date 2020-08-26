@@ -3,8 +3,8 @@ import './FourColGrid.css';
 
 const FourColGrid = (props) => {
 	return (
-		<div>
-			FourColGrid
+		<div className="rmdb-grid">
+			div
 		</div>
 	)
 }
