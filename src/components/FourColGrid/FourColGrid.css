@@ -1,6 +1,7 @@
 .rmdb-grid h1 {
 	font-family: 'Abel', sans-serif;
 	font-size: 42px;
+	color: #A1A1A1;
 }
 
 .rmdb-grid-content {
@@ -11,9 +12,15 @@
 .rmdb-grid-element {
 	margin: 0 40px 40px 0;
 	background: #353535;
-	max-height: 430px;
+	max-height: 420px;
 	animation: animateGrid 0.5s;
 	overflow: hidden;
+	border-radius:10px;
+}
+
+.rmdb-grid-element:hover {
+	box-shadow: 0 0 15px#1997c6;
+	cursor: pointer;
 }
 
 @keyframes animateGrid {

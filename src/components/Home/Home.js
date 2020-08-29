@@ -8,7 +8,6 @@ import MovieThumb from '../MovieThumb/MovieThumb';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 import Spinner from '../Spinner/Spinner';
 import './Home.css';
-import { render } from '@testing-library/react';
 
 class Home extends Component
 {
@@ -25,6 +24,7 @@ class Home extends Component
   {
     this.setState({ loading: true });
     //affichage des films populaires sur la page d'accueil
+    //pour changer langue affiche et résumé film --> mettre fr-FR
     const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
     this.fetchItems(endpoint);
   }
@@ -38,12 +38,13 @@ class Home extends Component
       loading: true,
       searchTerm
     })
+
     if (searchTerm === '')
     {
-      endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=$`;
+      endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
     } else
     {
-      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query${searchTerm}`;
+      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}`;
     }
     this.fetchItems(endpoint);
   }
@@ -75,7 +76,6 @@ class Home extends Component
           loading: false,
           currentPage: result.page,
           totalPages: result.total_pages,
-
         })
       })
       .catch(error => console.error('Error:', error))
