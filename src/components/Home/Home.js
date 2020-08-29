@@ -48,6 +48,7 @@ class Home extends Component
     }
     this.fetchItems(endpoint);
   }
+
   //variable pour afficher autre films en cliquant sur le bouton load more
   loadMoreItems = () =>
   {
@@ -59,7 +60,7 @@ class Home extends Component
       endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=${this.state.currentPage + 1}`;
     } else
     {
-      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query${this.state.searchTerm}&page=${this.state.currentPage + 1}`;
+      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${this.state.searchTerm}&page=${this.state.currentPage + 1}`;
     }
     this.fetchItems(endpoint);
   }
@@ -97,7 +98,7 @@ class Home extends Component
             <SearchBar callback={this.searchItems} />
           </div> : null}
         <div className="rmdb-home-grid">
-        {/*texte au dessus de la grille des films populaires ou de la recherche de films*/}
+          {/*texte au dessus de la grille des films populaires ou de la recherche de films*/}
           <FourColGrid
             header={this.state.searchTerm ? 'Search Result' : 'Popular Movies'}
             loading={this.state.loading}
@@ -110,13 +111,15 @@ class Home extends Component
                 image={element.poster_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${element.poster_path}` : '../../images/no-image.jpg'}
                 movieId={element.id}
                 movieName={element.title}
-                />      
+              />
 
             })}
           </FourColGrid>
+          {this.state.loading ? <Spinner /> : null}
+          {(this.state.currentPage <= this.state.totalPages && !this.state.loading) ?
+            <LoadMoreBtn text="Load more" onClick={this.loadMoreItems} />
+            : null}
         </div>
-        <Spinner />
-        <LoadMoreBtn />
       </div>
     )
   }
