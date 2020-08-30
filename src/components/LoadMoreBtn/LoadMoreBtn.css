@@ -1,11 +1,13 @@
 .rmdb-loadmorebtn {
 	background: #16d47b;
-	width: 100%;
+	width: 25%;
 	min-height: 50px;
 	text-align: center;
 	color: #fff;
 	cursor: pointer;
 	transition: all 0.3s;
+	border-radius: 40px;
+	margin: 20px auto;
 }
 
 .rmdb-loadmorebtn p {

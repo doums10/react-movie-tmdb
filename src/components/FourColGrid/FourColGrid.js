@@ -11,7 +11,9 @@ const FourColGrid = (props) =>
 			return (
 				<div key={i} className="rmdb-grid-element">
 					{element}
+					{/*<span className="tooltiptext">{props.text}kkk</span>*/}
 				</div>
+
 			)
 		})
 		return gridElements;
