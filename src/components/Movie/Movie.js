@@ -31,13 +31,13 @@ class Movie extends Component
       .then(result => result.json())
       .then(result =>
       {
-
+        console.log(result);
         if (result.status_code)
         {
           this.setState({ loading: false });
         } else
         {
-          this.setState({ movie: result }), () =>
+          this.setState({ movie: result }, () =>
           {
             // ...then fetch actors in the setState callback function
             const endpoint = `${API_URL}movie/${this.props.match.params.movieId}/credits?api_key=${API_KEY}`
@@ -48,13 +48,16 @@ class Movie extends Component
                 const directors = result.crew.filter((member) => member.job === "Director");
 
                 this.setState({
-                  actors: result.cast
+                  actors: result.cast,
+                  directors,
+                  loading: false
                 })
               })
           })
   }
 })
-  }
+   //.catch (error => console.error('Error:', error))
+  };
 
 render()
 {
