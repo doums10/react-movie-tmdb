@@ -10,11 +10,15 @@ import './Movie';
 
 class Movie extends Component
 {
-	render()
-	{
-		return (
-			<div>
-				Movie
+  render()
+  {
+    return (
+      <div className="rmdb-movie">
+        <Navigation />
+        <MovieInfo />
+        <MovieInfoBar />
+        <FourColGrid />
+        <Spinner />
 			</div>
 		)
 	}
