@@ -66,7 +66,7 @@ class Movie extends Component {
             <MovieInfoBar
               time={this.state.movie.runtime}
               budget={this.state.movie.budget}
-              revenur={this.state.movie.revenue}
+              revenue={this.state.movie.revenue}
             />
           </div>
         ) : null}
