@@ -5,7 +5,12 @@
 @import './components/LoadMoreBtn/LoadMoreBtn.css';
 @import './components/MovieThumb/MovieThumb.css';
 @import './components/SearchBar/SearchBar.css';
-@import './components/Spinner/Spinner.css';
+@import './components/Movie/Movie.css';
+@import './components/Actor/Actor.css';
+@import './components/MovieInfo/MovieInfo.css';
+@import './components/MovieInfoBar/MovieInfoBar.css';
+@import './components/MovieThumb/MovieThumb.css';
+@import './components/Navigation/Navigation.css';
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 body {
   margin: 0;
