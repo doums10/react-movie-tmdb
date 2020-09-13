@@ -43,10 +43,10 @@
 	}
 
 	.rmdb-grid-element {
-		max-height: 480px;
+		max-height: 515px;
 	}
 	.rmdb-loadmorebtn {
-		width: 35%;
+		width: 45% !important;
 	}
 	.rmdb-grid-element:nth-child(2n+2) {
 			margin-right: 0;
@@ -62,6 +62,9 @@
 			grid-template-columns: auto auto ;
 	}
 	.rmdb-grid-element {
-		max-height: 250px;
+		max-height: 300px;
+	}
+	.rmdb-loadmorebtn {
+		width: 65% !important;
 	}
 }

@@ -70,6 +70,8 @@ class Home extends Component {
           loading: false,
           currentPage: result.page,
           totalPages: result.total_pages
+        }, () => {
+          localStorage.setItem('HomeState', JSON.stringify(this.state));
         });
       });
   };
