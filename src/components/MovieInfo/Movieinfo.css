@@ -104,3 +104,24 @@ meter::-webkit-meter-suboptimum-value {
 meter::-webkit-meter-even-less-good-value {
   background: linear-gradient(to bottom, #ee5f5b);
 }
+
+@media screen and (max-width: 768px) {
+	.rmdb-grid-content {
+			grid-template-columns: auto auto;
+  }
+
+  .rmdb-movieinfo-text {
+    font-size: 100%;
+  }
+  .rmdb-movieinfo-text p{
+    font-size: 100%;
+  }
+
+  .rmdb-movieinfobar-info {
+    font-size: 80%;
+  }
+
+  .rmdb-navigation-content p {
+    font-size: 100%;
+  }
+}
