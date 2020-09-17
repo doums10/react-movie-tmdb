@@ -7,10 +7,17 @@
 	box-sizing: border-box;
 }
 
+
 .clickable {
 	cursor: pointer;
 }
 
 .clickable:hover {
 	opacity: 0.8;
+}
+
+@media screen and (max-width:480px) {
+	#movie-search {
+		height: 300px;
+	}
 }

@@ -13,7 +13,7 @@ const MovieThumb = (props) => {
             movieName: `${props.movieName}`
           }}
         >
-          <img src={props.image} alt="moviethumb" />
+          <img src={props.image} alt="moviethumb" id="movie-search"/>
         </Link>
       ) : (
         <img src={props.image} alt="moviethumb" />

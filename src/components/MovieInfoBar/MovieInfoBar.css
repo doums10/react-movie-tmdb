@@ -39,3 +39,16 @@
   float: left;
   margin-top: -3px;
 }
+
+@media screen and (max-width: 480px) {
+
+  .rmdb-movieinfobar-content-col {
+    padding: 10px 3px 0 0;
+  }
+  .rmdb-movieinfobar-info {
+  padding: 5px 0 0 5px;
+  }
+  .rmdb-movieinfobar {
+    font-size: 15px;
+  }
+}

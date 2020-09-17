@@ -111,7 +111,7 @@ meter::-webkit-meter-even-less-good-value {
   }
 
   .rmdb-movieinfo-text {
-    font-size: 100%;
+    font-size: 67%;
   }
   .rmdb-movieinfo-text p{
     font-size: 100%;
@@ -123,5 +123,31 @@ meter::-webkit-meter-even-less-good-value {
 
   .rmdb-navigation-content p {
     font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rmdb-movieinfo-thumb {
+    width: 30%;
+    height: 55%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    padding: 10px;
+    
+}
+  .rmdb-moviethumb img {
+    border-radius: 10px;
+
+  }
+  .rmdb-movieinfo-text {
+    left: 135px;
+    padding: 0px 0px 0px 20px;
+    width: 65%;
+  }
+  
+
+  .rmdb-movieinfobar {
+    padding: 25px 0px 0px 40px;
   }
 }
