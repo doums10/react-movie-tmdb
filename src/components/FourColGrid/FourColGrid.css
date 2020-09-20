@@ -62,7 +62,7 @@
 			grid-template-columns: auto auto ;
 	}
 	.rmdb-grid-element {
-		max-height: 300px;
+		max-height: 220px;
 	}
 	.rmdb-loadmorebtn {
 		width: 65% !important;
