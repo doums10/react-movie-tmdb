@@ -106,12 +106,12 @@ meter::-webkit-meter-even-less-good-value {
 }
 
 @media screen and (max-width: 768px) {
-	.rmdb-grid-content {
-			grid-template-columns: auto auto;
-  }
+	
 
   .rmdb-movieinfo-text {
     font-size: 67%;
+    padding: 10px;
+    left: 350px;
   }
   .rmdb-movieinfo-text p{
     font-size: 100%;

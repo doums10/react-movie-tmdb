@@ -6,7 +6,7 @@ const FourColGrid = (props) => {
   const renderElements = () => {
     const gridElements = props.children.map((element, i) => {
       return (
-        <div key={i} className="rmdb-grid-element">
+        <div key={i} className="rmdb-grid-element" id="actor">
           {element}
           {/*<span className="tooltiptext">{props.text}kkk</span>*/}
         </div>

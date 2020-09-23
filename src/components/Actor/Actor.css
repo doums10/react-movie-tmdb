@@ -29,14 +29,33 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  #actor {
+    background: #353535;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .rmdb-actor-name {
+    font-size: 22px;
+    color: #fff;
+    float: left;
+    margin: 4px 10px;
+    width: 50%;
+  }
+  .rmdb-actor-character {
+    font-size: 15px;
+    float: left;
+    margin: 0px 0px 0px 10px;
+    width: 50%;
+  }
+}
 
-  .rmdb-actor-character, .rmdb-actor-name {
+@media screen and (max-width: 480px) {
+  .rmdb-actor-character,
+  .rmdb-actor-name {
     margin: 4px 6px;
-    
   }
   .rmdb-actor-name {
     font-size: 13px;
   }
-  
 }

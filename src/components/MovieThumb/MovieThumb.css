@@ -16,6 +16,16 @@
 	opacity: 0.8;
 }
 
+@media screen and (max-width:768px) {
+	.rmdb-moviethumb img {
+		padding: 10px;
+		border-radius: 25px;
+	}
+	.rmdb-moviethumb img:hover{
+		opacity: 0.8;
+		cursor: pointer;
+	}
+}
 @media screen and (max-width:480px) {
 	#movie-search {
 		max-height: 300px;
