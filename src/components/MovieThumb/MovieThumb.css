@@ -18,8 +18,7 @@
 
 @media screen and (max-width:768px) {
 	.rmdb-moviethumb img {
-		padding: 10px;
-		border-radius: 25px;
+	
 	}
 	.rmdb-moviethumb img:hover{
 		opacity: 0.8;

@@ -40,14 +40,16 @@
 @media screen and (max-width: 768px) {
 	.rmdb-grid-content {
 			grid-template-columns: auto auto auto;
+			gap: 15px;
+			position: relative;
 	}
 
 	.rmdb-grid-element {
-		max-height: 355px;
+		max-height: 315px;
 		animation: animateGrid 0.5s;
 		overflow: hidden;
 		margin: 0;
-		background: transparent;
+		background: none!important;
 		border-radius: 0;
 
 	}
@@ -68,7 +70,7 @@
 			grid-template-columns: auto auto ;
 	}
 	.rmdb-grid-element {
-		max-height: 220px;
+		max-height: 285px;
 	}
 	.rmdb-loadmorebtn {
 		width: 65% !important;
