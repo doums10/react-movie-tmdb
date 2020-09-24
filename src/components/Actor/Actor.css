@@ -12,7 +12,7 @@
 .rmdb-actor-name {
   font-family: "Abel", sans-serif;
   font-size: 22px;
-  color: #fff;
+  color: skyblue;
   float: left;
   margin: 10px 20px;
   width: 40%;
@@ -36,8 +36,7 @@
     margin: 10px;
   }
   .rmdb-actor-name {
-    font-size: 22px;
-    color: #fff;
+    font-size: 20px;
     float: left;
     margin: 4px 10px;
     width: 50%;

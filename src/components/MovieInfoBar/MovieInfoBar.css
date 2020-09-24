@@ -5,7 +5,7 @@
   position: relative;
   padding: 25px 20px 0px 20px;
   box-sizing: border-box;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 22px;
   border-bottom: 1px solid dimgray;
 }
@@ -29,10 +29,10 @@
   float: left;
 }
 
-.fa-time, .fa-revenue {
+.fa-time,
+.fa-revenue {
   float: left;
   margin-top: -4px;
-
 }
 
 .fa-budget {
@@ -41,14 +41,14 @@
 }
 
 @media screen and (max-width: 480px) {
-
   .rmdb-movieinfobar-content-col {
     padding: 10px 3px 0 0;
   }
   .rmdb-movieinfobar-info {
-  padding: 5px 0 0 5px;
+    padding: 5px 0 0 5px;
   }
   .rmdb-movieinfobar {
-    font-size: 15px;
+    font-size: 75%;
+    height: 90px;
   }
 }

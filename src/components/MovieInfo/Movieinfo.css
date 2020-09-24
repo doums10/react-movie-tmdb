@@ -10,10 +10,10 @@
 
 @keyframes animateMovieinfo {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
 
@@ -49,8 +49,8 @@
 }
 
 .rmdb-movieinfo-text h1 {
-  font-family: 'Abel', sans-serif;
-  font-size:48px;
+  font-family: "Abel", sans-serif;
+  font-size: 48px;
   margin: 0;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .rmdb-movieinfo-text p {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 18px;
   line-height: 26px;
 }
@@ -92,8 +92,8 @@
 }
 
 meter::-webkit-meter-bar {
-  background: #FFF;
-  width:200px;
+  background: #fff;
+  width: 200px;
 }
 meter::-webkit-meter-optimum-value {
   background: linear-gradient(to bottom, #16d47b);
@@ -105,16 +105,17 @@ meter::-webkit-meter-even-less-good-value {
   background: linear-gradient(to bottom, #ee5f5b);
 }
 
-@media screen and (max-width: 768px) {
-	
-
+@media screen and (max-width: 768px){
   .rmdb-movieinfo-text {
     font-size: 67%;
     padding: 10px;
     left: 350px;
   }
-  .rmdb-movieinfo-text p{
+  .rmdb-movieinfo-text p {
     font-size: 100%;
+  }
+  .fa-film {
+    font-size: 55px;
   }
 
   .rmdb-movieinfobar-info {
@@ -126,7 +127,12 @@ meter::-webkit-meter-even-less-good-value {
   }
 }
 
+
 @media screen and (max-width: 480px) {
+  
+  .rmdb-grid-element {
+    max-height: 199px;
+}
   .rmdb-movieinfo-thumb {
     width: 30%;
     height: 55%;
@@ -134,20 +140,81 @@ meter::-webkit-meter-even-less-good-value {
     position: absolute;
     left: 0px;
     padding: 10px;
-    
-}
+  }
   .rmdb-moviethumb img {
     border-radius: 10px;
-
   }
   .rmdb-movieinfo-text {
-    left: 135px;
+    left: 31%;
     padding: 0px 0px 0px 20px;
     width: 65%;
   }
-  
 
+  .rmdb-rating {
+    width: 140px;
+  }
+
+  .fa-film {
+    font-size: 145%;
+}
   .rmdb-movieinfobar {
     padding: 25px 0px 0px 40px;
+    font-size: 75%;
+    height:90px;
   }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .rmdb-grid-element {
+    max-height: 89%;
+  }
+
+  .rmdb-heroimage {
+    background-position: center, left !important;
+  }
+
+  .rmdb-loadmorebtn {
+    width: 50% !important;
+  }
+
+  .rmdb-loadmorebtn p {
+    font-size: 30px;
+    padding: 8px;
+  }
+  .fa-film {
+    font-size: 55px;
+  }
+
+  .rmdb-movieinfo-text h1 {
+    font-size: 26px;
+    margin: 0;
+  }
+  .rmdb-movieinfo-text {
+    left: 33%;
+    padding: 5px 0px 0px 14px;
+    width: 61%;
+  }
+  .rmdb-rating {
+    width: 155px;
+  }
+
+  .rmdb-movieinfobar {
+    font-size: 13px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+
+  .rmdb-grid-element {
+    max-height: 305px;
+}
+
+.rmdb-grid-element {
+    max-height: 305px;
+
+}
+
 }
