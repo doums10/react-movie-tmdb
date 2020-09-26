@@ -8,7 +8,7 @@ import Movie from './components/Movie/Movie';
 function App()
 {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/movie-app/'>
       <React.Fragment>
         <Header />
         <Switch>

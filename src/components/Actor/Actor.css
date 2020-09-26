@@ -14,8 +14,8 @@
   font-size: 22px;
   color: skyblue;
   float: left;
-  margin: 10px 20px;
-  width: 40%;
+  margin: 10px 10px;
+  width: 50%;
   box-sizing: border-box;
 }
 
@@ -24,28 +24,24 @@
   font-size: 18px;
   color: #fff;
   float: left;
-  margin: 0 20px 10px 20px;
-  width: 40%;
+  margin: 0px 10px;
+  width: 50%;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {
   #actor {
-    background: #353535!important;
+    background: #353535 !important;
     border-radius: 10px;
     margin: 10px;
   }
   .rmdb-actor-name {
     font-size: 20px;
-    float: left;
     margin: 4px 10px;
-    width: 50%;
   }
   .rmdb-actor-character {
     font-size: 15px;
-    float: left;
     margin: 0px 0px 0px 10px;
-    width: 50%;
   }
 }
 

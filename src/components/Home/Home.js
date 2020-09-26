@@ -104,7 +104,7 @@ class Home extends Component {
                   image={
                     element.poster_path
                       ? `${IMAGE_BASE_URL}${POSTER_SIZE}${element.poster_path}`
-                      : "./images/no_image.jpg"
+                      : "../../images/no-image.jpg"
                   }
                   movieId={element.id}
                   movieName={element.title}

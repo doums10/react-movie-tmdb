@@ -1,79 +1,78 @@
 .rmdb-grid h1 {
-	font-family: 'Abel', sans-serif;
-	font-size: 42px;
-	color: #A1A1A1;
+  font-family: "Abel", sans-serif;
+  font-size: 42px;
+  color: #a1a1a1;
 }
 
 .rmdb-grid-content {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .rmdb-grid-element {
-	margin: 0 40px 30px 0;
-	background: #353535;
-	max-height: 90%;
-	animation: animateGrid 0.5s;
-	overflow: hidden;
-	border-radius:10px;
+  margin: 0 40px 30px 0;
+  background: #353535;
+  max-height: 90%;
+  animation: animateGrid 0.5s;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .rmdb-grid-element:hover {
-	box-shadow: 0 0 15px#1997c6;
-	cursor: pointer;
-	opacity: 0.8;
+  box-shadow: 0 0 15px#1997c6;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 @keyframes animateGrid {
-	from {
-					opacity:0;
-	}
-	to {
-					opacity:1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* For a 4-column grid */
-.rmdb-grid-element:nth-child(4n+4) {
-	margin-right: 0;
+.rmdb-grid-element:nth-child(4n + 4) {
+  margin-right: 0;
 }
 
-@media screen and (max-width: 768px) and (orientation : landscape) {
-	.rmdb-grid-content {
-			grid-template-columns: auto auto auto;
-			gap: 15px;
-			position: relative;
-	}
+@media screen and (max-width: 768px) {
+  .rmdb-grid-content {
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    position: relative;
+  }
 
-	.rmdb-grid-element {
-		max-height: 305px;
-		animation: animateGrid 0.5s;
-		overflow: hidden;
-		margin: 0;
-		background: none!important;
-		border-radius: 0;
+  .rmdb-grid-element {
+    max-height: 305px;
+    animation: animateGrid 0.5s;
+    overflow: hidden;
+    margin: 0;
+    background: none !important;
+    border-radius: 0;
+  }
+  .rmdb-loadmorebtn {
+    width: 45% !important;
+  }
+  .rmdb-grid-element:nth-child(2n + 2) {
+    margin-right: 0;
+  }
 
-	}
-	.rmdb-loadmorebtn {
-		width: 45% !important;
-	}
-	.rmdb-grid-element:nth-child(2n+2) {
-			margin-right: 0;
-	}
-
-	.rmdb-grid h1 {
-			font-size:22px;
-	}
+  .rmdb-grid h1 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-device-width: 480px) {
-	.rmdb-grid-content {
-			grid-template-columns: auto auto ;
-	}
-	.rmdb-grid-element {
-		max-height: 285px;
-	}
-	.rmdb-loadmorebtn {
-		width: 65% !important;
-	}
+  .rmdb-grid-content {
+    grid-template-columns: auto auto;
+  }
+  .rmdb-grid-element {
+    max-height: 285px;
+  }
+  .rmdb-loadmorebtn {
+    width: 65% !important;
+  }
 }
