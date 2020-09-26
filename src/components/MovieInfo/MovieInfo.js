@@ -3,6 +3,7 @@ import { IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from '../../config';
 import FontAwesome from 'react-fontawesome';
 import MovieThumb from '../MovieThumb/MovieThumb';
 import './MovieInfo.css';
+import Logo3 from "../../images/no-image.jpg";
 
 function MovieInfo(props)
 {
@@ -21,7 +22,7 @@ function MovieInfo(props)
             image={
               props.movie.poster_path
                 ? `${IMAGE_BASE_URL}${POSTER_SIZE}${props.movie.poster_path}`
-                : "../../images/no-image.jpg"
+                : `${Logo3}`
             }
             clickable={false}
           />

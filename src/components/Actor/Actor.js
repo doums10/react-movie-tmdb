@@ -1,6 +1,7 @@
 import React from "react";
 import { IMAGE_BASE_URL } from "../../config";
 import "./Actor";
+import Logo3 from "../../images/no-image.jpg";
 
 function Actor(props) {
   const POSTER_SIZE = "w154";
@@ -11,7 +12,7 @@ function Actor(props) {
         src={
           props.actor.profile_path
             ? `${IMAGE_BASE_URL}${POSTER_SIZE}${props.actor.profile_path}`
-            : "../../images/no-image.jpg"
+            : `${Logo3}`
         }
         alt="actorthumb"
       />

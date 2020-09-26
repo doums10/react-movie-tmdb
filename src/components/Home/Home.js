@@ -8,6 +8,8 @@ import MovieThumb from '../MovieThumb/MovieThumb';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 import Spinner from '../Spinner/Spinner';
 import './Home.css';
+import Logo3 from "../../images/no-image.jpg";
+
 
 class Home extends Component {
   state = {
@@ -104,7 +106,7 @@ class Home extends Component {
                   image={
                     element.poster_path
                       ? `${IMAGE_BASE_URL}${POSTER_SIZE}${element.poster_path}`
-                      : "../../images/no-image.jpg"
+                      : `${Logo3}`
                   }
                   movieId={element.id}
                   movieName={element.title}
