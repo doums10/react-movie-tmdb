@@ -1,0 +1,25 @@
+.rmdb-upcomingbtn {
+  background: #16d47b;
+  width: 14%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 40px;
+  margin: 10px;
+  float: right;
+  top: 20px;
+	position: relative;
+	visibility: hidden;
+}
+
+.rmdb-upcomingbtn p {
+  font-family: "Abel", sans-serif;
+  font-size: 21px;
+  padding: 4px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rmdb-upcomingbtn:hover {
+  opacity: 0.8;
+}

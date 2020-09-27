@@ -11,6 +11,8 @@
 @import './components/MovieInfoBar/MovieInfoBar.css';
 @import './components/MovieThumb/MovieThumb.css';
 @import './components/Navigation/Navigation.css';
+@import './components/UpcomingBtn/UpcomingBtn.css';
+
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 body {
   margin: 0;
