@@ -4,8 +4,12 @@
 
 > A robustly featured and continuously developed React application, utilizing The Movie Database API to display movie data.
 
-![](movie-app1.png)
 ![](movie-app.gif)
+![](movie-app1.png)
+![](movie-app2.png)
+![](movie-app3.png)
+![](movie-app4.png)
+
 
 ---
 
