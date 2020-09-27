@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Movie-App
 
-## Available Scripts
+## **<a href="https://oxydev.fr/movie-app/" target="_blank">Click here to demo</a>**
 
-In the project directory, you can run:
+> A robustly featured and continuously developed React application, utilizing The Movie Database API to display movie data.
 
-### `yarn start`
+![](movie-app1.png)
+![](demo.gif)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Features
 
-### `yarn test`
+Browse movies by popularity, release date, or search. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Save movies to a persistent favorites list for quick access any time.
 
-### `yarn build`
+View detailed movie information like runtimes, ratings, images, cast/crew data, and trailers.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Libraries and Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Accesses The Movie Database (TMDb) API for movie related data
+- Uses React, React Hooks
+- Components, props and state
+- Uses Axios for data fetching, included in a custom React Hook
+- Uses React Router for routing
+- Styled with Styled Components
+- Use Local Storage and Session Storage to keep state
+- Uses icons from Styled Icons (FontAwesome)
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Reach out to me at:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- m27sylla@gmail.com
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> My portfolio:
 
-## Learn More
+- <a href="https://oxydev.fr/portfolio/" target="_blank">https://oxydev.fr/portfolio/</a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Attribution
 
-### Code Splitting
+This application uses the TMDb API but is not endorsed or certified by TMDb.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<a href="https://www.themoviedb.org/about"><img src="https://www.themoviedb.org/assets/2/v4/logos/408x161-powered-by-rectangle-green-bb4301c10ddc749b4e79463811a68afebeae66ef43d17bcfd8ff0e60ded7ce99.png" title="TMDb" alt="themoviedb"></a>
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
